@@ -1,0 +1,3 @@
+#!/bin/bash
+lastLine='tail -1 iacta'
+echo "$lastLine" >> iacta

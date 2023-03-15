@@ -1,0 +1,8 @@
+#!/bin/bash
+words=$(cat)
+for word in $words; do
+  count=$(echo "$words" | grep -c -w "$word")
+  if [ $count -eq 1 ]; then
+    echo $word
+  fi
+done | sort | uniq

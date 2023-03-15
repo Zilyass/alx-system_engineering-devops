@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "Please enter a string: " user_input
+new_string=""
+for ((i=0; i<${#user_input}; i++)); do
+    # If the character is not a c or C add it to the new string
+    if [ "${user_input:$i:1}" != "c" ] && [ "${user_input:$i:1}" != "C" ]; then
+        new_string="$new_string${user_input:$i:1}"
+    fi
+done
+echo "New string: $new_string"

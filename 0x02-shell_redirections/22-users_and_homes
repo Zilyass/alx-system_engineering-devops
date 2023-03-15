@@ -1,0 +1,5 @@
+#!/bin/bash
+users=$(cat /etc/passwd | cut -d: -f1)
+declare -A user_homedirs
+for user in $users; do
+    user_homedirs[$user]=$(grep "^

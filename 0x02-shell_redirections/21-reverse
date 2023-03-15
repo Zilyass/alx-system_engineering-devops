@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Please enter a string: " user_input
+reverse_string=$(echo "$user_input" | rev)
+echo "Reversed string: $reverse_string"
