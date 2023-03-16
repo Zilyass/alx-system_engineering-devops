@@ -1,0 +1,2 @@
+#!/bin/bash
+nl -n ln | awk 'NR % 2 == 1'
