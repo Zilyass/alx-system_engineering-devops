@@ -1,7 +1,3 @@
 #!/bin/bash
-allLines=$(cat /etc/passwd)
-for line in $allLines; do
-  if ! echo "$line" | grep -q bin; then
-    echo "$line"
-  fi
-done
+grep -i -v "bin" /etc/passwd
+

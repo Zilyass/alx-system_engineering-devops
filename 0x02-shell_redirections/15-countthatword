@@ -1,4 +1,3 @@
 #!/bin/bash
-binLines=$(grep bin /etc/passwd)
-numLines=$(echo "$binLines" | wc -l)
-echo "Number of lines containing 'bin': $numLines"
+grep -c -i "bin" /etc/passwd
+

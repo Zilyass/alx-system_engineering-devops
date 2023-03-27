@@ -1,4 +1,3 @@
 #!/bin/bash
-rootLines=$(grep root /etc/passwd)
-sortedLines=$(echo "$rootLines" | sort -k7 -n)
-echo "$sortedLines"
+grep -i "root" /etc/passwd
+

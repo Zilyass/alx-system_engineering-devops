@@ -1,7 +1,3 @@
 #!/bin/bash
-rootLines=$(grep root /etc/passwd)
-for rootLine in $rootLines; do
-  echo "$rootLine"
-  rootLineNum=$(grep -n root /etc/passwd | cut -d: -f1)
-  tail -n +$rootLineNum /etc/passwd | head -n 4
-done
+grep -i "root" -A 3 /etc/passwd
+

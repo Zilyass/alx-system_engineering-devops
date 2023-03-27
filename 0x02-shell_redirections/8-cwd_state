@@ -1,7 +1,3 @@
 #!/bin/bash
-output=$(ls -la)
-if [ -f "ls_cwd_content" ]; then
-  echo "$output" > ls_cwd_content
-else
-  echo "$output" >> ls_cwd_content
-fi
+ls -la > ls_cwd_content
+

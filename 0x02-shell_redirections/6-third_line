@@ -1,3 +1,3 @@
 #!/bin/bash
-thirdLine=`sed -n '3p' iacta`
-echo $thirdLine
+head -n 3 iacta | tail -n 1
+
